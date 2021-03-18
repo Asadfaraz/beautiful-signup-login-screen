@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+
+  background-image: url("../images/flowers.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  background-color: rgba(150, 153, 112, 0.727);
+  background-blend-mode: hard-light;
+
+  display: grid;
+  place-content: center;
+}
+
+.signup-form {
+  width: 400px;
+  height: 500px;
+  border: 1px solid white;
+  color: white;
+
+  animation: shadanim 6s infinite;
+}
+@keyframes shadanim {
+  from {
+    box-shadow: -15px 15px 15px 5px rgb(123, 121, 121);
+  }
+  to {
+    box-shadow: 15px -15px 15px 5px rgb(46, 45, 45);
+  }
+}
+
+.header {
+  text-align: center;
+}
+.header h2 {
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: black;
+
+  letter-spacing: 3px;
+  /* border-bottom: 1px solid white; */
+
+  animation: headanim 6s infinite;
+}
+@keyframes headanim {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.info {
+  padding: 10px;
+
+  /* border: 1px solid red; */
+  margin-top: 40px;
+}
+.info div {
+  margin-top: 10px;
+}
+
+.info i {
+  padding: 5px;
+}
+.inputs {
+  /* width: 70%; */
+  padding: 10px;
+  font-size: 20px;
+
+  background: none;
+  border: none;
+
+  color: white;
+  border-bottom: 1px solid white;
+
+  letter-spacing: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.inputs:focus {
+  outline: none;
+  /* background: rgb(37, 36, 41); */
+}
+
+#btnsignup {
+  width: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 130px;
+
+  background: none;
+  color: white;
+  font-size: 20px;
+
+  border: none;
+  border-bottom: 4px dotted white;
+  font-weight: 200;
+  font-family: Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+#btnsignup:hover {
+  cursor: pointer;
+  animation: btnanim 2s infinite;
+}
+@keyframes btnanim {
+  from {
+    width: 100px;
+    background: none;
+  }
+  to {
+    width: 120px;
+    background: rgb(78, 75, 75);
+  }
+}
+
+.signinlink {
+  text-align: center;
+  padding: 10px;
+  margin-left: -15px;
+
+  cursor: pointer;
+}
+.signinlink a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Arial";
+}
+.signinlink a:hover {
+  color: rgb(107, 107, 245);
+}
+
+/* Login button effects */
+#btnsignin {
+  width: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 130px;
+
+  background: none;
+  color: white;
+  font-size: 20px;
+
+  border: none;
+  border-bottom: 4px dotted white;
+  font-weight: 200;
+  font-family: Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+#btnsignin:hover {
+  cursor: pointer;
+  animation: btnanim 2s infinite;
+}
+@keyframes btnanim {
+  from {
+    width: 100px;
+    background: none;
+  }
+  to {
+    width: 120px;
+    background: rgb(78, 75, 75);
+  }
+}
+
+/*  */
+footer {
+  color: white;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  margin-top: -20px;
+  text-align: center;
+  /* border: 1px solid white; */
+}
+footer p {
+  /* margin-top: 20px; */
+  font-size: 20px;
+  padding: 25px;
+}
